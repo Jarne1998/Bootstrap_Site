@@ -31,6 +31,20 @@ a:hover {
 
 /* Afbeelding */
 
+.card-img-top {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cards Projecten */
+
+.card-body {
+    width: 50%;
+}
+
+/*  */
+
 /* Form */
 
 .from-group {
@@ -64,6 +78,11 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.bi {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
 /* Inleiding */
 .inleiding {
     margin: 20px;
@@ -72,7 +91,3 @@ a:hover {
 /* Lightbox */
 
 /* Forum */
-
-.forum {
-    
-}
