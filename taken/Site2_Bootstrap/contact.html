@@ -52,30 +52,38 @@
         </div>
     </nav>
 
-    <div class="col-12">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 text-center">
-            <div class="forum">
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
+    <div class="container">
+      <div class="container d-flex align-items-center flex-column">
+        <form action="formulier.php" method="post">
+          <p>
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" size="40" maxlength="20" name="gebruikersnaam" placeholder="Your name" required>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="opmerking">Bericht:</label>
+          </p>
+          <div class="form-group">
+            <label for="sel1">Selectielijst:</label>
+            <select class="form-control" id="sel1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>          
+          <p>
+            <textarea rows="5" cols="25" id="opmerking" name="feedback"></textarea>
+          </p>
+          <p>
+            <button>Verzenden</button>
+          </p>
+        </form>
       </div>
+    </div>
   </div>
     
   <!-- Footer -->
