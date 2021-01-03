@@ -52,35 +52,37 @@
         </div>
     </nav>
 
-    <div class="container">
-      <div class="container d-flex align-items-center flex-column">
+    <div class="container-formulier">
+      <div class="container d-flex align-items-center flex-column text-center">
         <form action="formulier.php" method="post">
-          <p>
-            <label for="naam">Naam:</label>
-            <input type="text" id="naam" size="40" maxlength="20" name="gebruikersnaam" placeholder="Your name" required>
-          </p>
-          <p>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </p>
-          <p>
-            <label for="opmerking">Bericht:</label>
-          </p>
-          <div class="form-group">
-            <label for="sel1">Selectielijst:</label>
-            <select class="form-control" id="sel1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-          </div>          
-          <p>
-            <textarea rows="5" cols="25" id="opmerking" name="feedback"></textarea>
-          </p>
-          <p>
-            <button>Verzenden</button>
-          </p>
+          <div class="marge">
+            <p>
+              <label for="naam">Naam:</label>
+              <input type="text" id="naam" size="40" maxlength="20" name="gebruikersnaam" placeholder="Your name" required>
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </p>
+            <div class="form-group">
+              <label for="sel1">Selectielijst:</label>
+              <select class="form-control" id="sel1">
+                <option>HTML, CSS en Bootstrap</option>
+                <option>SQL</option>
+                <option>C#</option>
+                <option>SQL</option>
+              </select>
+            </div>  
+            <p>
+              <label for="opmerking">Bericht:</label>
+            </p>        
+            <p>
+              <textarea rows="5" cols="25" id="opmerking" name="feedback"></textarea>
+            </p>
+            <div class="lead">
+              <a class="btn btn-info btn-lg" href="formulier.php">Verzenden</a>
+            </div>
+          </div>
         </form>
       </div>
     </div>

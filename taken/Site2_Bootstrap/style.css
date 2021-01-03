@@ -100,3 +100,21 @@ a:hover {
 .kaarten {
     margin-top: 5%;
 }
+
+/* Form */
+
+.container-formulier {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: lightblue;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px lightblue;
+  border-radius: 5%;
+}
+
+.marge {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
