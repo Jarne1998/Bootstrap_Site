@@ -52,19 +52,32 @@
         </div>
     </nav>
 
-    <div class="container-formulier">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+          <div class="inleiding">
+            <h1>Contact</h1>
+            <p>
+              Hier kan je contact met me opnemen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-formulier col-lg-12 col-md-12 col-sm-12">
       <div class="container d-flex align-items-center flex-column text-center">
         <form action="formulier.php" method="post">
           <div class="marge">
-            <p>
+            <div class="col-lg-12 col-md-12 col-sm-3">
               <label for="naam">Naam:</label>
               <input type="text" id="naam" size="40" maxlength="20" name="gebruikersnaam" placeholder="Your name" required>
-            </p>
-            <p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required>
-            </p>
-            <div class="form-group">
+            </div>
+            <div class="form-group col-lg-12 col-md-12 col-sm-12">
               <label for="sel1">Selectielijst:</label>
               <select class="form-control" id="sel1">
                 <option>HTML, CSS en Bootstrap</option>
@@ -73,17 +86,51 @@
                 <option>SQL</option>
               </select>
             </div>  
-            <p>
+            <div class="col-lg-12 col-md-12 col-sm-12">
               <label for="opmerking">Bericht:</label>
-            </p>        
-            <p>
-              <textarea rows="5" cols="25" id="opmerking" name="feedback"></textarea>
-            </p>
-            <div class="lead">
+            </div>        
+            <div>
+              <textarea rows="5" cols="40" id="opmerking" name="feedback"></textarea>
+            </div >
+            <div class="lead col-lg-12 col-md-12 col-sm-12">
               <a class="btn btn-info btn-lg" href="formulier.php">Verzenden</a>
             </div>
           </div>
         </form>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="row">
+        <div class="text-center col-md-6 col-lg-6">
+          <div class="foto-cv">
+            <dl>
+              <dt>
+                <img src="afbeeldingen/me2 copy.png" alt="jarne">
+              </dt>
+            </dl> 
+          </div> 
+        </div>
+        <div class="text-center col-sm-6 col-md-6 col-lg-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Jarne Bauwens</li>
+            <li class="list-group-item">Graduaat Programmeren</li>
+            <li class="list-group-item">Antwerpsestraat 99, 2500 Lier</li>
+            <li class="list-group-item">Belgie</li>
+            <li class="list-group-item">info.lier@thomasmore.be</li>
+            <li class="list-group-item">+ 32 14 56 44 50</li>
+            <li class="list-group-item">
+              <div class="lead">
+                <a class="btn btn-info btn-lg" href="www.linkedin.com/in/jarne-bauwens-597676171">LinkedIn</a>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="lead">
+                <a class="btn btn-info btn-lg" href="https://github.com/Jarne1998">GitHub</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
