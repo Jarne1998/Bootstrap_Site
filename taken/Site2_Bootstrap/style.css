@@ -84,10 +84,19 @@ a:hover {
 }
 
 /* Inleiding */
+
 .inleiding {
     margin: 20px;
 }
 
-/* Lightbox */
+/* CTA */
 
-/* Forum */
+.call-to-action {
+    margin-top: 5%;
+}
+
+/* kaarten */
+
+.kaarten {
+    margin-top: 5%;
+}
