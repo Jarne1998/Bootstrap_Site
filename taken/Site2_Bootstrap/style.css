@@ -121,8 +121,8 @@ a:hover {
 
 .marge div {
     margin: 5px;
-    width: auto;
     margin-left: auto;
+    width: auto;
     margin-right: auto;
 }
 
