@@ -70,16 +70,18 @@
     </div>
 
     <!-- Contact forum -->
-    <div class="container-formulier col-lg-12 col-md-12 col-sm-12">
+    <div class="container-formulier">
       <div class="container d-flex align-items-center flex-column text-center">
         <form action="formulier.php" method="post">
           <div class="marge">
-            <div class="col-lg-12 col-md-12 col-sm-3">
+            <div class="col-lg-12 col-md-12 col-sm-12">
               <label for="naam">Naam:</label>
+              <br />
               <input type="text" id="naam" size="40" maxlength="20" name="gebruikersnaam" placeholder="Your name" required>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12">
               <label for="email">Email:</label>
+              <br />
               <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group col-lg-12 col-md-12 col-sm-12">
@@ -95,7 +97,7 @@
               <label for="opmerking">Bericht:</label>
             </div>        
             <div>
-              <textarea rows="5" cols="40" id="opmerking" name="feedback"></textarea>
+              <textarea rows="5" cols="30" id="opmerking" name="feedback"></textarea>
             </div >
             <div class="lead col-lg-12 col-md-12 col-sm-12">
               <a class="btn btn-info btn-lg" href="formulier.php">Verzenden</a>
