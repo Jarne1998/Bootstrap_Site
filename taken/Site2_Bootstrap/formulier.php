@@ -14,6 +14,12 @@
     <meta name="description" content="Portfolio-site met Bootstrap">
     <meta name="author" content="Jarne Bauwens r0781813 LTI GPR d1.1">
 
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!--Eigen style bestand-->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- Navbar -->
@@ -49,31 +55,32 @@
       </div>
     </nav>
 
-    <img class="masthead-avatar mb-5 achtergond-logo" src="#" alt="logo" title="logo">
-    <h1>Contact form</h1>
-    <p>Not every field of the contact form is shown below. We received all of the info!</p>
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+      <h1>Contact Formulier</h1>
+      <p>Niet elk veld word getoond. We hebben de info ontvangen!</p>
 
-    <?php
+      <?php
     
-    if (isset($_POST["gebruikersnaam"]) && $_POST["gebruikersnaam"] != "") {
-			echo "<p> Ingevuld bij naam: " . $_POST["gebruikersnaam"] . "</p>\n";
-		} else {
-			echo "<p> Gebruikersnaam werd niet ingevuld </p>\n";
-		}
+      if (isset($_POST["gebruikersnaam"]) && $_POST["gebruikersnaam"] != "") {
+			  echo "<p> Ingevuld bij naam: " . $_POST["gebruikersnaam"] . "</p>\n";
+		  } else {
+			  echo "<p> Gebruikersnaam werd niet ingevuld </p>\n";
+		  }
     
-    if (isset($_POST["feedback"]) && $_POST["feedback"] != "") {
-    echo "<p> Message typed by user: " . $_POST["feedback"] . "</p>\n";
-    } else {
-    echo "<p> No message was submitted by user. </p>\n";
-    }
+      if (isset($_POST["feedback"]) && $_POST["feedback"] != "") {
+        echo "<p> Message typed by user: " . $_POST["feedback"] . "</p>\n";
+      } else {
+        echo "<p> No message was submitted by user. </p>\n";
+      }
     
-    ?>
+      ?>
 
-    <div id="center_button">
-        <button onclick="location.href='index.html'">Back to Home</button>
+      <div id="center_button">
+          <button onclick="location.href='index.html'">terug naar de homepage</button>
+      </div>
+
     </div>
-
-    <!-- Footer -->
+  <!-- Footer -->
   <div class="container-fluid pb-0 mb-0 justify-content-center">
    <footer class="page-footer font-small cyan darken-3 bg-info">
      <hr />
